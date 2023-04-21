@@ -103,10 +103,14 @@ meter {
 
 :root {
   /* Colores */
-  --clr-oscuro: 127 9% 41%;
+  /* --clr-oscuro: 127 9% 41%;
   --clr-asento: 10 50% 79%;
   --clr-asento-claro: 31 61% 89%;
-  --clr-claro: 50 37% 97%;
+  --clr-claro: 50 37% 97%; */
+  --clr-oscuro: 353 100% 33%;
+  --clr-asento: 138 100% 27%;
+  --clr-asento-claro: 255 0% 0%;
+  --clr-claro: 47 100% 49;
   --clr-negro: 0 0% 20%;
   --clr-blanco: 0 0% 100%;
 
@@ -835,6 +839,5 @@ footer {
   }
   .container-otros > * {
     flex-basis: 50%;
-
   }
 }
