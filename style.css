@@ -160,6 +160,7 @@ body {
 }
 
 /* Colores */
+
 /* De fondo */
 .fondo-oscuro {
   background-color: hsl(var(--clr-oscuro));
