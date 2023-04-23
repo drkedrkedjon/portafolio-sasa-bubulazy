@@ -8,18 +8,18 @@
   <link rel="preload" href="/assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/style.css">
   <script defer src="/assets/scripts/index.js"></script>
-  <title>Portafolio de Cathy</title>
+  <title>Portafolio de Sasa Savic Perusina</title>
 </head>
 
 <body>
   <!-- Header y Menú -->
-  <header class="fondo-asento-claro color-oscuro">
+  <header class="fondo-oscuro-uno color-asento-blanco">
     <div class="container flex header-container">
       <div>
-        <p class="logo fs-600 f-str-75 f-wei-600">{this.cataryGarciaRivas}</p>
+        <p class="logo fs-600 f-str-75 f-wei-600 color-asento-claro">{this.sasaSavicPerusina}</p>
       </div>
       <nav id="main-nav" aria-label="main-nav">
-        <ul class="flex nav-principal fondo-asento-claro f-wei-600" role="list">
+        <ul class="flex nav-principal fondo-oscuro-uno f-wei-600" role="list">
           <li><a onclick="cerrarMenu()" href="#sobre-mi">Sobre mi</a></li>
           <li><a onclick="cerrarMenu()" href="#mis-proyectos">Proyectos</a></li>
           <li><a onclick="cerrarMenu()" href="#form">Contactos</a></li>
@@ -43,21 +43,21 @@
   <section class="hero-section">
     <div class="hero-container container flex">
       <div class="hero-img-container fondo-asento-claro rotate-center">
-        <img src="/assets/images/caty.png" alt="Foto de mi">
+        <img src="/assets/images/sasa.png" alt="Foto de mi">
       </div>
-      <h1 class="fs-hero f-str-75 f-wei-600 lh-small color-oscuro">Hola soy Catary, desarrolladora FrontEnd y algo
+      <h1 class="fs-hero f-str-75 f-wei-600 lh-small color-asento-blanco">Hola soy Sasa, desarrollador FrontEnd y algo
         más...</h1>
     </div>
   </section>
 
 
   <!-- Sobre mi -->
-  <section id="sobre-mi" class="fondo-oscuro color-claro">
+  <section id="sobre-mi" class="fondo-oscuro-dos color-claro">
     <div class="container sobre-mi flex">
-      <h2 class="fs-800 f-str-75 f-wei-600">Sobre mi</h2>
+      <h2 class="fs-800 f-str-75 f-wei-600 color-asento-claro">Sobre mi</h2>
       <div class="flow">
         
-        <p>
+        <p class="color-asento-blanco">
           ¡Hola! Iniciada en el mundo de la programación como junior, con muchas ganas de llevar a cabo todo lo aprendido en diferentes cursos, como en <a href="https://freecodecamp.org">FreeCodeCamp</a>, <a href="https://platzi.com">Platzi</a> y <a href="https://scrimba.com">Scrimba</a> de CSS, HTML, JavaScript, React 18 y React Router 6. Con mucha disposición, determinación, voluntad y sin miedo a nada. Espero a que os animéis a contactarme. Gracias de antemano.
         </p>  
       </div>
@@ -66,11 +66,11 @@
 
   <!-- Mis habilidades -->
   <main>
-    <section class="fondo-asento">
+    <section class="fondo-oscuro-uno">
       <div class="container mis-habilidades flex color-oscuro">
-        <h2 class="fs-800 f-str-75 f-wei-600 lh-small">Mis habilidades</h2>
+        <h2 class="fs-800 f-str-75 f-wei-600 lh-small color-asento-claro">Mis habilidades</h2>
 
-        <ul class="ul-habilidades flex fs-500 f-wei-600">
+        <ul class="ul-habilidades flex fs-500 f-wei-600 color-asento-blanco">
           <li>JavaScript ES6</li>
           <li>React 18</li>
           <li>React Router 6</li>
@@ -83,13 +83,13 @@
     <!-- Mis proyectos -->
     <section id="mis-proyectos" class="fondo-proyecto">
       <div class="container mis-proyectos flex color-oscuro">
-        <h2 class="fs-800 f-str-75 f-wei-600">
+        <h2 class="fs-800 f-str-75 f-wei-600 color-asento-blanco">
           Mis proyectos
         </h2>
 
         <div class="cards-container flex">
 
-          <div class="card-proyecto flow fondo-asento-claro">
+          <div class="card-proyecto flow fondo-oscuro-uno">
             <img src="/assets/images/proyecto-1/blancodent-card.jpg" alt="Presentación de la página web">
             <div class="card-contenido flow">
               <h3 class="fs-600 f-str-75 f-wei-600">Clínica dental Blancodent</h3>
@@ -97,7 +97,7 @@
               <p><a href="/proyecto-blancodent.html">Ver la descripción detallada del proyecto y mi trabajo =></a></p>
             </div>
           </div>
-          <div class="card-proyecto flow fondo-asento-claro">
+          <div class="card-proyecto flow fondo-oscuro-dos">
             <img src="/assets/images/proyecto-2/pac-man.png" alt="Presentación de la página web">
             <div class="card-contenido flow">
               <h3 class="fs-600 f-str-75 f-wei-600">Juego de Pac-Man</h3>
@@ -130,7 +130,7 @@
         </div>
 
         <div>
-          <form class="contact-form fondo-oscuro color-claro flow" name="contacto" method="POST" data-netlify="true">
+          <form class="contact-form fondo-oscuro-uno color-claro flow" name="contacto" method="POST" data-netlify="true">
             <label for="nombre">Nombre:</label>
             <input class="color-oscuro" type="text" id="nombre" name="nombre" placeholder="¿Cómo te gustaria que te llamara?">
             <label for="email">Email:</label>
