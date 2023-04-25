@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+    <!-- <link
       rel="preload"
       href="/assets/fonts/Mona-Sans.woff2"
       as="font"
       type="font/woff2"
       crossorigin
-    />
+    /> -->
     <link rel="stylesheet" href="/style.css" />
     <script defer src="/assets/scripts/index.js"></script>
     <title>Portafolio de Sasa Savic Perusina</title>
@@ -68,14 +68,15 @@
         <h2 class="fs-800 f-str-75 f-wei-600 color-oscuro-negro">Sobre mi</h2>
         <div class="flow">
           <p class="color-oscuro-negro">
-            ¡Hola! Iniciada en el mundo de la programación como junior, con
-            muchas ganas de llevar a cabo todo lo aprendido en diferentes
-            cursos, como en <a href="https://freecodecamp.org">FreeCodeCamp</a>,
-            <a href="https://platzi.com">Platzi</a> y
+            ¡Hola! Me inicie en el mundo de desrollo FrontEnd en 1997 y hasta
+            2002 he trabajado como freelancer. Entonces he cambiado mi profesion
+            y ahora regreso con muchas ganas de llevar a cabo todo lo nuevo
+            aprendido en diferentes cursos, como en
+            <a href="https://freecodecamp.org">FreeCodeCamp</a> y
             <a href="https://scrimba.com">Scrimba</a> de CSS, HTML, JavaScript,
-            React 18 y React Router 6. Con mucha disposición, determinación,
-            voluntad y sin miedo a nada. Espero a que os animéis a contactarme.
-            Gracias de antemano.
+            React 18, React Router 6 & Firebase. Con mucha disposición,
+            determinación, voluntad y ganas de aprender. Espero a que os animéis
+            a contactarme.
           </p>
         </div>
       </div>
@@ -92,8 +93,9 @@
           <ul class="ul-habilidades flex fs-500 f-wei-600 color-oscuro-negro">
             <li>JavaScript ES6</li>
             <li>React 18</li>
-            <li>React Router 6</li>
-            <li>Git & GitHub</li>
+            <li>React Router</li>
+            <li>Git</li>
+            <li>Firebase</li>
             <li>CSS & HTML</li>
           </ul>
         </div>
@@ -107,20 +109,49 @@
 
           <div class="cards-container flex color-oscuro-negro">
             <div class="card-proyecto flow fondo-oscuro-dos">
-              <img
-                src="/assets/images/proyecto-1/blancodent-card.jpg"
-                alt="Presentación de la página web"
-              />
+              <div class="img-container">
+                <img
+                  src="/assets/images/sarajevo-tours/sarajevo-tours-card.png"
+                  alt="Presentación de la página web"
+                />
+              </div>
+              <div class="card-contenido flow">
+                <h3 class="fs-600 f-str-75 f-wei-600">Sarajevo Tours</h3>
+                <p>
+                  Proyecto de una tienda online. Hecha con React, React Router +
+                  Firebase Firestore y Auth. Diseño con Figma.
+                </p>
+                <p>
+                  Practicas de: Flexbox, Grid, Container Query, Nested Routes,
+                  Relative Path, Query parameters, Conditional rendering,
+                  Stateful Forms, useEffect, useState, createContext, useRef,
+                  useNavigate y etc...
+                </p>
+                <p>
+                  <a href="/proyecto-sarajevo-tours.html"
+                    >Te invito a visitar =></a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="card-proyecto flow fondo-oscuro-dos">
+              <div class="img-container">
+                <img
+                  src="/assets/images/blancodent/blancodent-card.jpg"
+                  alt="Presentación de la página web"
+                />
+              </div>
               <div class="card-contenido flow">
                 <h3 class="fs-600 f-str-75 f-wei-600">
                   Clínica dental Blancodent
                 </h3>
                 <p>
-                  La página web de una clínica dental (cliente comercial) hecha
-                  con CSS, HTML y un poco de JS. La web original estaba en
-                  Squarespace y la he transferido a Netlify respectando el
-                  diseño original.
+                  Web de una clínica dental (cliente comercial) diseño + UX/UI
+                  utilizando Figma. Un nuevo codigo de CSS, HTML y un poco de
+                  JS. La web original estaba en Squarespace y la hemos
+                  transferido a Netlify.
                 </p>
+                <p>En la proxima fase se pasara a utilizar Eleventy como SSG</p>
                 <p>
                   <a href="/proyecto-blancodent.html"
                     >Ver la descripción detallada del proyecto y mi trabajo
@@ -130,36 +161,14 @@
               </div>
             </div>
             <div class="card-proyecto flow fondo-oscuro-dos">
-              <img
-                src="/assets/images/proyecto-2/pac-man.png"
-                alt="Presentación de la página web"
-              />
+              <div class="img-container">
+                <img
+                  src="/assets/images/proyecto-2/pac-man.png"
+                  alt="Presentación de la página web"
+                />
+              </div>
               <div class="card-contenido flow">
                 <h3 class="fs-600 f-str-75 f-wei-600">Juego de Pac-Man</h3>
-                <p>
-                  Proyecto de JavaScript inspirado por el famoso juego de
-                  Pac-Man.
-                </p>
-                <p>
-                  Necesitarás el teclado por lo que deberías hacerlo desde un
-                  ordenador.
-                </p>
-                <p>
-                  <a
-                    target="_blank"
-                    href="https://catharygr.github.io/juego-de-pacman/"
-                    >Ve a la página web y juega una partida =></a
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="card-proyecto flow fondo-oscuro-dos">
-              <img
-                src="/assets/images/proyecto-3/snake-game.png"
-                alt="Presentación de la página web"
-              />
-              <div class="card-contenido flow">
-                <h3 class="fs-600 f-str-75 f-wei-600">Juego de la serpiente</h3>
                 <p>
                   Uno de mis primeros proyectos en JavaScript, aprendiendo a
                   manipular DOM, insertando CSS desde JS, usando modus operator,
@@ -172,8 +181,8 @@
                 <p>
                   <a
                     target="_blank"
-                    href="https://catharygr.github.io/juego-snake-game/"
-                    >Te invito a jugar ;-) =></a
+                    href="https://catharygr.github.io/juego-de-pacman/"
+                    >Ve a la página web y juega una partida =></a
                   >
                 </p>
               </div>
@@ -194,8 +203,15 @@
               pregunta, no dudes en escribirme.
             </p>
             <p class="f-wei-600 color-oscuro">
-              <a target="_blank" href="https://github.com/catharygr">github</a>
-              | linkedin
+              <a target="_blank" href="https://github.com/drkedrkedjon"
+                >github |</a
+              >
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/sasa-savic-perusina/"
+              >
+                LinkedIn</a
+              >
             </p>
           </div>
 
@@ -241,7 +257,7 @@
       <!-- Footer -->
       <footer>
         <p class="color-oscuro fs-300 f-wei-600 color-asento-uno">
-          Hecho en canarias con amor
+          Hecho entre Canarias y Sarajevo con amor.
         </p>
       </footer>
     </main>
