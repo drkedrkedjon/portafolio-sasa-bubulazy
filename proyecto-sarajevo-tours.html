@@ -59,9 +59,9 @@
         <h2 class="fs-800 f-str-75 f-wei-600">Introducción</h2>
         <div class="flow">
           <p>
-            La pagina web de una tienda online (no existente) de guias GPS para
-            turistas. Practicas de: React 18, React router 6, Firebase Auth. y
-            Firestore database as backend. Rutas protegidas para la
+            Proyecto pagina web de una tienda (ficticia) online de guias GPS
+            para turistas. Practicas de: React 18, React router 6, Firebase
+            Auth. y Firestore database as backend. Rutas protegidas para la
             administracion. Carito de compra interactivo, Formulario de contacto
             con statefull forms. Query parameters para filtrar los productos.
           </p>
@@ -112,44 +112,49 @@
             <h3 class="fs-700 f-str-75 f-wei-600 color-asento-uno">
               Propósito del proyecto
             </h3>
-            <p>El proyecto se ha dividido en tres fases:</p>
             <p>
-              En la primera (terminada), simplemente se ha copiado el diseño
-              existente en Squarespace pasándolo al Netlify y haciendo un código
-              base nuevo. En el proceso únicamente se ha añadido un nuevo
-              segmento hero con varias ofertas.
+              En el proyecto hemos trabajado dos. Mi pareja y yo, ambos alumnos
+              del bootcamp y con parecido nivel de conocimientos.
             </p>
             <p>
-              En la segunda parte (actualmente trabajando en este) se pasará el
-              código base a Eleventy (generador de páginas estáticas), la cual
-              ayudará con la reorganización de la web e implementación de un
-              CMS.
+              Después de terminar el bootcamp quísimos crear un proyecto lo mas
+              parecido a una web del mundo real. Hemos decidido crear una tienda
+              online de venta de guias turisticas alrededor de la ciudad de
+              Sarajevo. El contenido es real, las guias no.
             </p>
             <p>
-              En la tercera (por hacer), se creará un carrito de compra y se
-              conectará con la pasarela de pago Stripe.
+              Los requisitos eran: React, React router y Firebase como backend
+              de datos y Auth. y en el proceso, utilizar y aprender mas sobre
+              VSC, Vite, EsLint, Prettier, GitHub y Netlify.
             </p>
+            <p>Aprender a trabajar en equipo y sin guía.</p>
           </div>
 
           <div class="grid-elem-2 flow">
             <h3 class="fs-700 f-str-75 f-wei-600 color-asento-uno">
               Mi papel en el proyecto
             </h3>
-            <p>En el proyecto trabajamos dos.</p>
             <p>
-              Mi papel en este proyecto ha sido encargarme de analizar el diseño
-              actual y transferirlo al nuevo código utilizando las últimas
-              tecnologías de CSS.
+              Utilizando Figma app he creado el diseño y UI (
+              <a
+                target="_blank"
+                href="https://www.figma.com/file/9a4MCgZuUR64tJ5AY8h1sR/Seher-Tours?node-id=0%3A1&t=7ubf2dVNCFSxdIMM-1"
+                >figma file</a
+              >
+              ) .
             </p>
             <p>
-              Posteriormente, revisar y depurar todo el código para eliminar
-              errores. Con esto hemos conseguido que la web mejore de una manera
-              completa y eficiente.
+              Posteriormente, fue analizar el diseño para traducirlo en jsx y
+              CSS, estructurar el proyecto en VSC, investigar en Google como
+              conectar con Firestore. Leer la documentacion, aprender y escribir
+              el codigo.
             </p>
             <p>
-              Colaborar con mi compañero del proyecto para elaborar diseño y la
-              estructura para hacer que la página sea accesible y rápida ante
-              todo.
+              Menos en la parte de CSS reset, todo el codigo ha sido escrito por
+              mi. Era una promesa de no copiar código del nadie, sino leer la
+              documentación en MDN y buscarme la vida. Seguramente por eso hay
+              errore de principantes pero la web funciona bien y he aprendido
+              muchisimo.
             </p>
           </div>
 
@@ -179,36 +184,52 @@
               Web stack y la explicacion
             </h3>
             <p>
-              Teniendo el diseño existente en la primera fase nos hemos enfocado
-              en lo siguiente:
-            </p>
-
-            <p>
-              HTML: El uso de las etiquetas semánticas como section, main,
-              article, nav... con la intención de hacer la página accesible
-              desde las primeras líneas del nuevo código.
+              Lugar de trabajo: Visual Studio Code. Vite con complementos EsLint
+              y Prettier.
             </p>
             <p>
-              CSS: utilización de Flexbox y Grid por defecto para organizar
-              layout y transferir el diseño. Uso intensivo de variables CSS (con
-              valores por defecto) y de las clases útiles. Nuevas seudo clases
-              como por ejemplo :where() y :clamp().
+              Figma: diseño, UI y UX. Diseño gráfico y funcionalidad básica.
             </p>
             <p>
-              Uso de las propiedades modernas como backdrop-filter,
-              margin-inline, aspect-ratio…
+              CSS: la transformación del diseño en una aplicación web real se
+              realizó utilizando propiedades modernas de CSS. Para Layout he
+              usado flexbox y grid y también el nueva API de query container que
+              fue realmente divertida de aprender y usar. Alguna experimentación
+              con clip-path y CSS variables.
             </p>
             <p>
-              JS: Implementación de la navegación tipo hamburger en pantallas
-              pequeñas vía aria-hidden: y aria-selected: atributos para que sea
-              accesible vía teclado. También implementación de un carrusel en la
-              sección de hero con promociones.
+              React Router: rutas relativas, rutas anidadas. Carga de rutas
+              anidadas por defecto en outlet usando index. query parameters para
+              filtrado de datos, useLocation para capturar la ruta. Link,
+              NavLink para enlaces. isActive en NavLinks. useNavegate para
+              redirección si el usuario no está autenticado, etc...
             </p>
             <p>
-              Git y GitHub: Uso continuo de git con varias ramas main/desarrollo
-              y con pull request via GitHub.
+              React: react components, props. Componentes reutilizables. Uso de
+              condicional rendering en muchos lugares. Control de formulario con
+              estado a través de value y onChange. useEffect para consulta de
+              red y algunas otros oportunidades. useState, useRef. React context
+              en dos lugares, uno para almacenar datos y segundo para carrito de
+              compras.
             </p>
-            <p>Netlify: Conexión y deploy vía GitHub.</p>
+            <p>
+              Firebase: conexión Firebase Firestore. Iniciar aplicación, obtener
+              datos colección de formularios. Dado que el conjunto de datos es
+              muy pequeño, he cargando todo a la vez y en un react context.
+              Seguro que en una aplicación más seria, los datos se descargarán
+              de firebase según sea necesario por filtrado en getDocs().
+              Autenticación, iniciar sesión con correo electrónico y contraseña
+              y onAuthStateChanged listener para permitir que el usuario
+              registrado ingrese en área protegida (rutas). Iniciar sesión y
+              cerrar sesión.
+            </p>
+            <p>
+              Netlify: Conexión de mi formulario de React, Reglas de redireccion
+              para pushState en React. Implementación continua a través de
+              GitHub.
+            </p>
+            <p>Extras: reactMarkdown, vite-plugin-svgr</p>
+            <p>Git: commits, Branches, Merge, Restore, push</p>
           </div>
 
           <div class="grid-elem-5">
@@ -226,20 +247,19 @@
           <div class="flow grid-problemas-1">
             <h3 class="fs-700 f-str-75 f-wei-600">Problemas y soluciones</h3>
             <p>
-              Inicialmente se trataba de una web estática pero el cliente cambió
-              de idea y también ha querido implementar un blog. Eso nos ha
-              llevado a decisiones de implementar la segunda fase (actual) de
-              utilizar Eleventy SSG que es ideal para un blog no muy complejo.
-            </p>
-
-            <p>
-              También utilizaremos un plug-in para las imágenes que automatizará
-              la entrega de la imágenes en diferentes tamaños y formatos.
+              Los problemas aparecian por todas parte en el desarollo. Pero, con
+              ayuda de lo aprendido en el bootcamp y de las documentaciones poco
+              a poco hemo ido solucionándolos.
             </p>
             <p>
-              En la conversación con agente de SEO se han encontrado unos puntos
-              que serán corregidos para mejorar el posicionamiento de la web en
-              el buscador sin influir en la accesibilidad de la misma.
+              Más de una vez he llegado a un punto muerto y tuve que regresar a
+              un git commit anterior o a borrar el branch y empezar de nuevo.
+            </p>
+            <p>
+              Lo más que he aprendido con todo este proceso de ir pa adelante y
+              pa atras, es obtener un entendimiento mental sobre el proceso
+              creativo de resolver un problema que me parece un saber
+              fundamental en la programación.
             </p>
           </div>
 
@@ -263,21 +283,20 @@
           <div class="flow grid-problemas-3">
             <h3 class="fs-700 f-str-75 f-wei-600">Lecciones aprendidas</h3>
             <p>
-              La forma de trabajar de manera eficiente e inteligente, para
-              lograr una mejor productividad y mejores resultados y mejor unión
-              del equipo.
+              Trabajar en equipo. Compartir ideas. Aceptar que el otro tiene la
+              razon. Respetar cuando uno no sabe.
             </p>
 
             <p>
-              Revisar frecuentemente, si estamos avanzando en la dirección
-              correcta que necesitan nuestros clientes o si requiere que nos
-              adaptemos a ellos.
+              Buscar soluciones en la web. Conectar puntos claves de
+              documentación para adaptar a necesidades de este proyecto. Tomar
+              decisiones sobre próximos pasos.
             </p>
             <p>
-              Aprender de cada lección es uno de los aspectos más importantes de
-              la programación, pues así los errores y aciertos de los proyectos
-              quedan registrados para ser usados en futuras iniciativas, y de
-              esta manera se aprende a mejorar continuamente.
+              Refactorar y mejorar el codigo. Escribirlo de una manera que se
+              entiende. Dedicar tiempo para los detalles, especialmente en CSS.
+              Escribir HTML semantico y asi mismo accesible para los lectores de
+              pantalla.
             </p>
           </div>
         </div>
