@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <script defer src="/assets/scripts/index.js"></script>
+    <title>Proyecto App de Recordatorios para Móviles</title>
+  </head>
+
+  <body>
+    <!-- Header y menú -->
+    <header class="fondo-oscuro-uno">
+      <div class="container flex header-container">
+        <div>
+          <p class="logo fs-600 f-str-75 f-wei-600 color-asento-claro">
+            <a href="/index.html">{this.sasaSavicPerusina}</a>
+          </p>
+        </div>
+        <nav id="main-nav" aria-label="main-nav">
+          <ul class="flex nav-principal fondo-oscuro-uno f-wei-600" role="list">
+            <li><a href="index.html#sobre-mi">Sobre mi</a></li>
+            <li><a href="index.html#mis-proyectos">Proyectos</a></li>
+            <li><a href="index.html#form">Contactos</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <template id="burger-template">
+        <button
+          class="btn-nav"
+          id="burger-btn"
+          type="button"
+          aria-expanded="false"
+          aria-label="Menú"
+          aria-controls="main-nav"
+        >
+          <svg width="24" height="24" aria-hidden="true">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </button>
+      </template>
+    </header>
+
+    <section class="proyecto-hero">
+      <div class="container flex proyecto-container">
+        <h1 class="fs-hero f-str-75 f-wei-600 lh-small color-asento-uno">
+          <span class="fs-800 color-asento-dos">Proyecto:</span
+          ><br />Recordatorios, la App para Móviles
+        </h1>
+      </div>
+    </section>
+
+    <!-- Introducción -->
+
+    <section id="introduccion" class="fondo-asento-dos color-oscuro-negro">
+      <div class="container introduccion flex">
+        <h2 class="fs-800 f-str-75 f-wei-600">Introducción</h2>
+        <div class="flow">
+          <p>
+            Proyecto app Recordatorios para móviles inspirada por recordatorios
+            de iOS. Hecha con las siguiente tehnologias: React 18, React router,
+            Firebase Auth, Realtime DB y Storage. Multiusuario.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deatlles del proyecto -->
+
+    <main>
+      <section class="fondo-asento-dos color-oscuro-negro">
+        <div class="container proyecto-detalles flex color-oscuro">
+          <div class="flow">
+            <h2 class="fs-800 f-str-75 f-wei-600">Tipo:</h2>
+            <ul class="ul-detalles fs-400 f-wei-600">
+              <li>Web App</li>
+              <li>Optimisada para móviles</li>
+            </ul>
+          </div>
+          <div class="flow">
+            <h2 class="fs-800 f-str-75 f-wei-600">Herramientas:</h2>
+            <ul class="ul-detalles fs-400 f-wei-600">
+              <li>CSS & HTML</li>
+              <li>React 18</li>
+              <li>React Router 6</li>
+              <li>Firebase backend</li>
+              <li>Git & GitHub</li>
+              <li>Netlifly</li>
+            </ul>
+          </div>
+          <div class="flow">
+            <h2 class="fs-800 f-str-75 f-wei-600">En vivo:</h2>
+            <ul class="ul-detalles fs-400 f-wei-600">
+              <li>
+                <a target="_blank" href="https://reminders-app-sasa.netlify.app"
+                  >Visitar</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Descripción del proyecto -->
+      <section class="fondo-descripcion color-negro">
+        <div class="container grid descripcion-proyecto">
+          <div class="grid-elem-1 flow">
+            <h3 class="fs-700 f-str-75 f-wei-600 color-asento-uno">
+              Propósito del proyecto
+            </h3>
+            <p>
+              Inspirado por app de recordatorios de iOS, he decidido recrearla
+              parcialmente utilisando stack basado en React y Firebase como
+              backend.
+            </p>
+            <p>
+              La app pueden usar varios usuarios cada uno con su propio login.
+              Se pueden crear y borrar listas y tambien los recordatorios con un
+              retraso por si se cambia la intencion. Se pueden anadir las
+              imagenes a cada recordatorio.
+            </p>
+            <p>
+              Existen las lista predefinidas como las de hoy y los proximos tres
+              dias...
+            </p>
+          </div>
+
+          <div class="grid-elem-2 flow">
+            <h3 class="fs-700 f-str-75 f-wei-600 color-asento-uno">
+              Mi papel en el proyecto
+            </h3>
+            <p>Utilizando Figma app he creado el diseño y UI de la app.</p>
+            <p>
+              Posteriormente, paso a paso iba construyendo estructura de la app
+              y la conexion con Firebase como backend. Luego iba implementando
+              diferentes caracteristicas. Al final, he hecho el deploy en
+              Netlify via GitHub.
+            </p>
+            <p>
+              Menos en la parte de CSS reset, todo el código ha sido escrito por
+              mi. Tambien la estructura de datos en Firebase. La idea es seguir
+              añadiendo nuevas caracteristicas y mejorar el diseño.
+            </p>
+          </div>
+
+          <div class="grid-elem-3">
+            <picture>
+              <source
+                media="(max-width: 49.999rem)"
+                srcset="
+                  /assets/images/sarajevo-tours/proyecto-primera-peque.png
+                "
+              />
+              <source
+                media="(min-width: 50rem)"
+                srcset="
+                  /assets/images/sarajevo-tours/proyecto-primera-grande.png
+                "
+              />
+              <img
+                src="/assets/images/sarajevo-tours/proyecto-primera-peque.png"
+                alt="Imágenes de la clínica"
+              />
+            </picture>
+          </div>
+
+          <div class="grid-elem-4 flow">
+            <h3 class="fs-700 f-str-75 f-wei-600 color-asento-uno">
+              Web stack y la explicación
+            </h3>
+            <p>
+              Lugar de trabajo: Visual Studio Code. Vite con complementos EsLint
+              y Prettier.
+            </p>
+            <p>Figma: diseño, UI y UX.</p>
+            <p>
+              CSS: La transformación del diseño en una app real se realizó
+              utilizando API modernas de CSS. Para Layout he usado flexbox y
+              grid y también query container que fue realmente divertida
+              aprender y usar. Alguna experimentación con clip-path y CSS
+              variables.
+            </p>
+            <p>
+              React Router: Rutas relativas, rutas anidadas. Carga de rutas
+              anidadas por defecto en outlet usando index. Query parameters para
+              filtrado de datos, useLocation para capturar la ruta. Link,
+              NavLink para enlaces. isActive en NavLinks. useNavegate para
+              redirección si el usuario no está autenticado, etc...
+            </p>
+            <p>
+              React: Componentes reutilizables, props. Uso de condicional
+              rendering. Control de formulario con estado a través de value y
+              onChange. useEffect para consulta de red y algunas otros
+              oportunidades. useState, useRef. React context en dos lugares, uno
+              para almacenar datos y segundo para carrito de compras.
+            </p>
+            <p>
+              Firebase: Conexión con Firestore. Iniciar aplicación, obtener
+              datos colección de formularios. Dado que el conjunto de datos es
+              muy pequeño, he cargando todo a la vez y en un react context.
+              Seguro que en una aplicación más seria, los datos se descargarán
+              de firebase según sea necesario por filtrado en getDocs().
+              Autenticación, iniciar sesión con correo electrónico y contraseña
+              y onAuthStateChanged listener para permitir que el usuario
+              registrado ingrese en área protegida (rutas). Iniciar y cerrar
+              sesión.
+            </p>
+            <p>
+              Netlify: Conexión de mi formulario de React, Reglas de redirección
+              para pushState en React. Implementación continúa a través de
+              GitHub.
+            </p>
+            <p>Extras: reactMarkdown, vite-plugin-svgr</p>
+            <p>Git: commits, Branches, Merge, Restore, push</p>
+          </div>
+
+          <div class="grid-elem-5">
+            <img
+              src="/assets/images/sarajevo-tours/proyecto-ultima.png"
+              alt="Imágenes de la clínica"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Problemas y soluciones -->
+      <section class="fondo-asento-dos color-oscuro-negro">
+        <div class="container grid flow problema-soluciones">
+          <div class="flow grid-problemas-1">
+            <h3 class="fs-700 f-str-75 f-wei-600">Problemas y soluciones</h3>
+            <p>
+              Los problemas aparecian por todas parte durante del desarollo.
+              Pero, con ayuda de lo aprendido en el bootcamp y de las
+              documentaciones poco a poco hemos ido solucionándolos.
+            </p>
+            <p>
+              Más de una vez he llegado a un punto muerto y tuve que regresar a
+              un git commit anterior o a borrar el branch y empezar de nuevo.
+            </p>
+            <p>
+              Lo más que he aprendido con todo este proceso de ir pa adelante y
+              pa atrás, es obtener un concepto mental sobre el proceso creativo
+              de resolver un problema que me parece un saber fundamental en la
+              programación.
+            </p>
+          </div>
+
+          <div class="grid-problemas-2">
+            <picture>
+              <source
+                media="(max-width: 56.999rem)"
+                srcset="/assets/images/sarajevo-tours/problemas-corto.png"
+              />
+              <source
+                media="(min-width: 57rem)"
+                srcset="/assets/images/sarajevo-tours/problemas-largo.png"
+              />
+              <img
+                src="/assets/images/grid-elem-3.jpeg"
+                alt="Imágenes de la clínica"
+              />
+            </picture>
+          </div>
+
+          <div class="flow grid-problemas-3">
+            <h3 class="fs-700 f-str-75 f-wei-600">Lecciones aprendidas</h3>
+            <p>
+              Trabajar en equipo. Compartir ideas. Aceptar que el otro tiene la
+              razón. Respetar cuando uno no sabe.
+            </p>
+            <p>
+              Buscar soluciones en la web. Conectar puntos claves de
+              documentación para adaptar a necesidades de este proyecto. Tomar
+              decisiones sobre próximos pasos.
+            </p>
+            <p>
+              Refactorar y mejorar el código. Escribirlo de una manera que se
+              entienda. Dedicar tiempo para los detalles, especialmente en CSS.
+              Escribir HTML semántico y así mismo accesible para los lectores de
+              pantalla.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Otros proyectos -->
+      <section class="fondo-descripcion">
+        <div class="container otros-proyectos">
+          <div class="flow">
+            <h2 class="fs-800 f-str-75 f-wei-600 color-asento-blanco">
+              Otros proyectos
+            </h2>
+
+            <div class="container-otros flex">
+              <div class="flow">
+                <h3 class="fs-700 f-str-75 f-wei-600 color-asento-uno">
+                  Clínica Dental Blancodent
+                </h3>
+                <p>
+                  El deseo del cliente era de mover la web de Squarespace a
+                  Netlify mateniendo el diseño, con un nuevo código base.
+                </p>
+                <p>
+                  Cliente comercial. El proyecto se ha dividido en tres fase, la
+                  primera se ha terminado. En la segunda es usar Eleventy como
+                  SSG.
+                </p>
+                <a target="_blank" href="/proyecto-blancodent.html"
+                  >Ver proyecto</a
+                >
+              </div>
+              <div class="flow">
+                <h3 class="fs-700 f-str-75 f-wei-600 color-asento-uno">
+                  Juego de PacMan
+                </h3>
+                <p>
+                  Uno de mis primeros proyectos en JavaScript, aprendiendo a
+                  manipular DOM, insertando CSS desde JS, usando modus operator,
+                  etc...
+                </p>
+                <p>
+                  Necesitarás el teclado por lo que deberías hacerlo desde un
+                  ordenador.
+                </p>
+                <a
+                  target="_blank"
+                  href="https://drkedrkedjon.github.io/juego-pac-man/"
+                  >Ver proyecto</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contactar -->
+      <section class="fondo-oscuro-uno color-oscuro-negro">
+        <div class="container flex contactar">
+          <h3 class="fs-800 f-str-75 f-wei-600 lh-small color-asento-uno">
+            Vamos a trabajar juntos
+          </h3>
+          <div class="flow">
+            <p>
+              Si estás buscando a un desarrollador junior con quién te gustaría
+              trabajar o simplemente deseas conectarte o hacer una pregunta, no
+              dudes en escribirme.
+            </p>
+            <a
+              href="index.html#form"
+              class="contacta-btn fondo-asento-dos fs-400 f-str-100 f-wei-600"
+              >Contacta</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p class="color-oscuro fs-300 f-wei-600">
+          <a target="_blank" href="https://github.com/drkedrkedjon">GitHub</a>
+          |
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/sasa-savic-perusina/"
+          >
+            LinkedIn</a
+          >
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

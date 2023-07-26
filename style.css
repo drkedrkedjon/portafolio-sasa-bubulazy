@@ -460,7 +460,6 @@ nav {
 
 .sobre-mi,
 .mis-habilidades,
-.mis-proyectos,
 .contact-container {
   flex-direction: column;
   justify-content: center;
@@ -513,6 +512,17 @@ nav {
 /*      Mis proyectos        */
 /* ************************* */
 
+.mis-proyectos {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-block: var(--padding-block);
+}
+.proyectos-segunda-fila {
+  padding-block-start: 0;
+}
+
 .cards-container {
   flex-direction: column;
   gap: 2rem;
@@ -522,6 +532,7 @@ nav {
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
   overflow: hidden;
+  max-width: 30rem;
 }
 
 .card-contenido {
