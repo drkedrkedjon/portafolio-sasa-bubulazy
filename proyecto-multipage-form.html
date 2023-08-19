@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
     <script defer src="/assets/scripts/index.js"></script>
-    <title>Proyecto App de Recordatorios para Móviles</title>
+    <title>Proyecto Formulario web de multipagina</title>
   </head>
 
   <body>
@@ -46,8 +46,8 @@
     <section class="proyecto-hero">
       <div class="container flex proyecto-container">
         <h1 class="fs-hero f-str-75 f-wei-600 lh-small color-asento-uno">
-          <span class="fs-800 color-asento-dos">Proyecto:</span
-          ><br />Recordatorios, la App para Móviles
+          <span class="fs-800 color-asento-dos">Proyecto:</span><br />Formulario
+          web de varias paginas
         </h1>
       </div>
     </section>
@@ -59,9 +59,11 @@
         <h2 class="fs-800 f-str-75 f-wei-600">Introducción</h2>
         <div class="flow">
           <p>
-            Proyecto app Recordatorios para móviles inspirada por recordatorios
-            de iOS. Hecha con las siguiente tehnologias: React 18, React router,
-            Firebase Auth, Realtime DB y Storage. Multiusuario.
+            Esta aplicación sirve como un proyecto de ejercicio dirigido a
+            construir un formulario de varias páginas con autenticación de
+            Firebase, almacenamiento e integración de bases de datos como
+            backend. Esencialmente, simula el proceso de solicitud de una
+            oportunidad de trabajo.
           </p>
         </div>
       </div>
@@ -84,7 +86,6 @@
             <ul class="ul-detalles fs-400 f-wei-600">
               <li>CSS & HTML</li>
               <li>React 18</li>
-              <li>React Router 6</li>
               <li>Firebase backend</li>
               <li>Git & GitHub</li>
               <li>Netlifly</li>
@@ -94,7 +95,9 @@
             <h2 class="fs-800 f-str-75 f-wei-600">En vivo:</h2>
             <ul class="ul-detalles fs-400 f-wei-600">
               <li>
-                <a target="_blank" href="https://reminders-app-sasa.netlify.app"
+                <a
+                  target="_blank"
+                  href="https://multipage-form-sasa.netlify.app"
                   >Visitar</a
                 >
               </li>
@@ -111,19 +114,19 @@
               Propósito del proyecto
             </h3>
             <p>
-              Inspirado por app de recordatorios de iOS, he decidido recrearla
-              parcialmente utilisando stack basado en React y Firebase como
-              backend.
+              Inspirado por multitud de formularios complejos que usuarios
+              tienen que rellenar a la hora de aplicar a un trabajo, he creado
+              esta simple app que expresa la manera como yo creo que deberia ser
+              el proceso.
             </p>
             <p>
-              La app pueden usar varios usuarios cada uno con su propio login.
-              Se pueden crear y borrar listas y tambien los recordatorios con un
-              retraso por si se cambia la intencion. Se pueden anadir las
-              imagenes a cada recordatorio.
+              El flujo de UX esta dividido en dos caminos, si el usuario es
+              nuevo va por registro y solicitud y si ya esta registrado, por
+              login y chequeo si ya solicito el puesto
             </p>
             <p>
-              Existen las lista predefinidas como las tareas de hoy y de los
-              proximos tres dias...
+              Al final existe opcion de borrar todos los datos y solicitudes por
+              el mismo usuario.
             </p>
           </div>
 
@@ -134,7 +137,7 @@
             <p>Utilizando Figma app se ha creado el diseño y UI de la app.</p>
             <p>
               Posteriormente, paso a paso iba construyendo estructura de la app
-              y el flujo de UX. La conexion con Firebase se utilizo como como
+              y el flujo de UX. La conexion con Firebase se utilizo como
               backend. Luego se han anadido diferentes caracteristicas. Al
               final, se utilizo Netlify via GitHub para deploy.
             </p>
@@ -148,16 +151,18 @@
             <picture>
               <source
                 media="(max-width: 49.999rem)"
-                srcset="/assets/images/reminders-app/proyecto-primera-peque.png"
+                srcset="
+                  /assets/images/multipage-form/proyecto-primera-peque.png
+                "
               />
               <source
                 media="(min-width: 50rem)"
                 srcset="
-                  /assets/images/reminders-app/proyecto-primera-grande.png
+                  /assets/images/multipage-form/proyecto-primera-grande.png
                 "
               />
               <img
-                src="/assets/images/reminders-app/proyecto-primera-peque.png"
+                src="/assets/images/multipage-form/proyecto-primera-peque.png"
                 alt="Imágenes de la clínica"
               />
             </picture>
@@ -186,7 +191,7 @@
               React: Componentes reutilizables, props. Uso de condicional
               rendering. Control de formulario con estado a través de value y
               onChange. useEffect para consulta de red y algunas otros
-              oportunidades. useState. React Context.
+              oportunidades. useState.
             </p>
             <p>
               Firebase: Implementé registro de usuarios, envío de datos a la
@@ -195,22 +200,24 @@
             </p>
             <p>
               Netlify: Logré una implementación continua y sin problemas a
-              través de GitHub, asegurando actualizaciones fluidas y constantes.
+              través de GitHub, asegurando actualizaciones constantes.
             </p>
             <p>
               Extras: Integré react-markdown y react-feather para mejorar la
-              funcionalidad y el aspecto visual de la aplicación.
+              funcionalidad y el aspecto visual de la aplicación. Tanbien
+              paquetes como remove-scroll y focus-lock para optimizar la
+              accesibilidad y experiencia del usuario.
             </p>
             <p>
               Git: Gestioné eficazmente el control de versiones utilizando
-              commits, branches, merge, restore y push para mantener un
-              historial de cambios coherente.
+              commits, branches, merge, restore y push para colaborar de manera
+              efectiva en equipos y mantener un historial de cambios coherente.
             </p>
           </div>
 
           <div class="grid-elem-5">
             <img
-              src="/assets/images/reminders-app/proyecto-ultima.png"
+              src="/assets/images/multipage-form/proyecto-ultima.png"
               alt="Imágenes de la clínica"
             />
           </div>
@@ -223,15 +230,14 @@
           <div class="flow grid-problemas-1">
             <h3 class="fs-700 f-str-75 f-wei-600">Problemas y soluciones</h3>
             <p>
-              Organizar la experiencia de usuario en el código fue un desafío
-              central. A menudo tuve que ajustar o regresar con el código para
-              lograr coherencia. Cambiar de react state y props a react context
-              en dos ocasiones demostró ser una solución más adecuada.
+              Durante todo el proceso de desarrollo, me encontré con una serie
+              de desafíos que surgieron en diversas etapas.
             </p>
             <p>
-              Otro inconviniente era que con cada nueva caracteristica sugerian
-              ideas de dos mas y tantas ideas tambien puede ser es un problema
-              si primero uno no se termina cada caracteristica por completo.
+              En numerosas ocasiones, me vi enfrentado a puntos de bloqueo donde
+              el avance parecía detenerse por completo. En esos momentos, tuve
+              que recurrir a estrategias como regresar a commits anteriores para
+              poder comenzar de nuevo desde un punto más sólido.
             </p>
             <p>
               Una lección valiosa que extraigo de este proceso continuo de
@@ -244,14 +250,14 @@
             <picture>
               <source
                 media="(max-width: 56.999rem)"
-                srcset="/assets/images/reminders-app/problemas-corto.png"
+                srcset="/assets/images/multipage-form/problemas-corto.png"
               />
               <source
                 media="(min-width: 57rem)"
-                srcset="/assets/images/reminders-app/problemas-largo.png"
+                srcset="/assets/images/multipage-form/problemas-largo.png"
               />
               <img
-                src="/assets/images/reminders-app/problemas-corto.png"
+                src="/assets/images/grid-elem-3.jpeg"
                 alt="Imágenes de la clínica"
               />
             </picture>
@@ -260,13 +266,13 @@
           <div class="flow grid-problemas-3">
             <h3 class="fs-700 f-str-75 f-wei-600">Lecciones aprendidas</h3>
             <p>
-              Dedicar mas tiempo a la planificación y la organización de la app
-              antes de sentrarse y escribir el código.
+              Trabajar en equipo. Compartir ideas. Aceptar que el otro tiene la
+              razón. Respetar cuando uno no sabe.
             </p>
             <p>
-              Enfocarse a funcionalidad basica antes de añadir nuevas ideas.
-              Organisacion de flujo de UX tambien, y eso antes de sentarse y
-              escribir el codigo.
+              Buscar soluciones en la web. Conectar puntos claves de
+              documentación para adaptar a necesidades de este proyecto. Tomar
+              decisiones sobre próximos pasos.
             </p>
             <p>
               Refactorar y mejorar el código. Escribirlo de una manera que se
@@ -289,18 +295,18 @@
             <div class="container-otros flex">
               <div class="flow">
                 <h3 class="fs-700 f-str-75 f-wei-600 color-asento-uno">
-                  Multipage Web Form
+                  App de Recordatorios para moviles
                 </h3>
                 <p>
-                  Esencialmente, simula el proceso de solicitud de una
-                  oportunidad de trabajo.
+                  Inspirado por app de Recordatorios de iOS. Uso de las
+                  siguientes tehnologias: React, React Router, Firebase Realtime
+                  DB, Auth y Storage.
                 </p>
                 <p>
-                  Esta aplicación sirve como un proyecto de ejercicio dirigido a
-                  construir un formulario de varias páginas con autenticación de
-                  Firebase y como backend.
+                  Funcionalidad basica implementada, se iran implementando
+                  varias ideas sobre como mejorar la funcionalidad
                 </p>
-                <a href="/proyecto-multipage-form.html">Ver proyecto</a>
+                <a href="/proyecto-reminders-app.html">Ver proyecto</a>
               </div>
               <div class="flow">
                 <h3 class="fs-700 f-str-75 f-wei-600 color-asento-uno">
